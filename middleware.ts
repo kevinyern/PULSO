@@ -31,8 +31,8 @@ export function middleware(request: NextRequest) {
 
   // Find matching locale
   for (const language of languages) {
-    if (locales.includes(language.code as any)) {
-      preferredLocale = language.code as any;
+    if (locales.includes(language.code as typeof locales[number])) {
+      preferredLocale = language.code as typeof locales[number];
       break;
     }
   }

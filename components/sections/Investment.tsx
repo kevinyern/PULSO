@@ -24,12 +24,21 @@ export default function Investment() {
         const end = 3000;
         const duration = 1800;
         const step = (end / duration) * 16;
-        const timer = setInterval(() => {
+        let timer: NodeJS.Timeout | null = null;
+        timer = setInterval(() => {
           start += step;
-          if (start >= end) { setCount(end); clearInterval(timer); }
-          else setCount(Math.floor(start));
+          if (start >= end) {
+            setCount(end);
+            if (timer) clearInterval(timer);
+            timer = null;
+          } else {
+            setCount(Math.floor(start));
+          }
         }, 16);
         observer.disconnect();
+        return () => {
+          if (timer) clearInterval(timer);
+        };
       }
     }, { threshold: 0.3 });
     if (ref.current) observer.observe(ref.current);

@@ -56,11 +56,9 @@ export default function ApplicationCTA() {
   const [formData, setFormData] = useState({
     business: '',
     selling: '',
-    wants_change: '',
     problem: '',
     monthly_revenue: '',
     investment: '',
-    start_when: '',
     why_pulso: '',
   });
 
@@ -84,7 +82,7 @@ export default function ApplicationCTA() {
       Object.entries(formData).forEach(([key, value]) => tallyData.append(key, value));
       await fetch('https://tally.so/r/pbVd1J', { method: 'POST', body: tallyData, mode: 'no-cors' });
       setSubmitted(true);
-      setFormData({ business: '', selling: '', wants_change: '', problem: '', monthly_revenue: '', investment: '', start_when: '', why_pulso: '' });
+      setFormData({ business: '', selling: '', problem: '', monthly_revenue: '', investment: '', why_pulso: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
     } finally {
@@ -155,12 +153,17 @@ export default function ApplicationCTA() {
               value={formData.business}
               onChange={handleChange}
               required
-              style={{
-                ...inputBase,
-                '&:focus': { borderColor: '#D4AF37' },
-              } as any}
-              onFocus={(e) => (e.target.style.borderColor = '#D4AF37')}
-              onBlur={(e) => (e.target.style.borderColor = '#2a2a2a')}
+              style={inputBase}
+              onFocus={(e) => {
+                if (e.target instanceof HTMLInputElement) {
+                  e.target.style.borderColor = '#D4AF37';
+                }
+              }}
+              onBlur={(e) => {
+                if (e.target instanceof HTMLInputElement) {
+                  e.target.style.borderColor = '#2a2a2a';
+                }
+              }}
             />
           </div>
 
@@ -179,9 +182,17 @@ export default function ApplicationCTA() {
                 ...inputBase,
                 resize: 'vertical',
                 minHeight: '60px',
-              } as any}
-              onFocus={(e) => (e.target.style.borderColor = '#D4AF37')}
-              onBlur={(e) => (e.target.style.borderColor = '#2a2a2a')}
+              } as React.CSSProperties}
+              onFocus={(e) => {
+                if (e.target instanceof HTMLTextAreaElement) {
+                  e.target.style.borderColor = '#D4AF37';
+                }
+              }}
+              onBlur={(e) => {
+                if (e.target instanceof HTMLTextAreaElement) {
+                  e.target.style.borderColor = '#2a2a2a';
+                }
+              }}
             />
           </div>
 
@@ -200,9 +211,17 @@ export default function ApplicationCTA() {
                 ...inputBase,
                 resize: 'vertical',
                 minHeight: '60px',
-              } as any}
-              onFocus={(e) => (e.target.style.borderColor = '#D4AF37')}
-              onBlur={(e) => (e.target.style.borderColor = '#2a2a2a')}
+              } as React.CSSProperties}
+              onFocus={(e) => {
+                if (e.target instanceof HTMLTextAreaElement) {
+                  e.target.style.borderColor = '#D4AF37';
+                }
+              }}
+              onBlur={(e) => {
+                if (e.target instanceof HTMLTextAreaElement) {
+                  e.target.style.borderColor = '#2a2a2a';
+                }
+              }}
             />
           </div>
 
@@ -218,9 +237,17 @@ export default function ApplicationCTA() {
               style={{
                 ...inputBase,
                 cursor: 'pointer',
-              } as any}
-              onFocus={(e) => (e.target.style.borderColor = '#D4AF37')}
-              onBlur={(e) => (e.target.style.borderColor = '#2a2a2a')}
+              } as React.CSSProperties}
+              onFocus={(e) => {
+                if (e.target instanceof HTMLSelectElement) {
+                  e.target.style.borderColor = '#D4AF37';
+                }
+              }}
+              onBlur={(e) => {
+                if (e.target instanceof HTMLSelectElement) {
+                  e.target.style.borderColor = '#2a2a2a';
+                }
+              }}
             >
               <option value="">Seleccionar...</option>
               <option value="<10k">Menos de 10k€/mes</option>
@@ -242,9 +269,17 @@ export default function ApplicationCTA() {
               style={{
                 ...inputBase,
                 cursor: 'pointer',
-              } as any}
-              onFocus={(e) => (e.target.style.borderColor = '#D4AF37')}
-              onBlur={(e) => (e.target.style.borderColor = '#2a2a2a')}
+              } as React.CSSProperties}
+              onFocus={(e) => {
+                if (e.target instanceof HTMLSelectElement) {
+                  e.target.style.borderColor = '#D4AF37';
+                }
+              }}
+              onBlur={(e) => {
+                if (e.target instanceof HTMLSelectElement) {
+                  e.target.style.borderColor = '#2a2a2a';
+                }
+              }}
             >
               <option value="">Seleccionar...</option>
               <option value={t.formInvestmentOptions.option1}>{t.formInvestmentOptions.option1}</option>

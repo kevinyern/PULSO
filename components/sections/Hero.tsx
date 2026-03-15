@@ -10,9 +10,9 @@ function FloatingParticles() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) return undefined;
     const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    if (!ctx) return undefined;
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
@@ -30,7 +30,7 @@ function FloatingParticles() {
       opacity: Math.random() * 0.6 + 0.25,
     }));
 
-    let animId: number;
+    let animId: number = 0;
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       particles.forEach(p => {
@@ -53,7 +53,7 @@ function FloatingParticles() {
     draw();
 
     return () => {
-      cancelAnimationFrame(animId);
+      if (animId) cancelAnimationFrame(animId);
       window.removeEventListener('resize', resize);
     };
   }, []);
