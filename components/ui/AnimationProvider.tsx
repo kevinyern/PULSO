@@ -15,7 +15,6 @@ export default function AnimationProvider() {
 
     // Parallax en imágenes de fondo
     const handleScroll = () => {
-      const scrollY = window.scrollY;
       document.querySelectorAll<HTMLElement>('.parallax-bg').forEach(el => {
         const parent = el.parentElement;
         if (!parent) return;
