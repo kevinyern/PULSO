@@ -18,31 +18,28 @@ export default function Investment() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        let start = 0;
-        const end = 3000;
-        const duration = 1800;
-        const step = (end / duration) * 16;
-        let timer: NodeJS.Timeout | null = null;
-        timer = setInterval(() => {
-          start += step;
-          if (start >= end) {
-            setCount(end);
-            if (timer) clearInterval(timer);
-            timer = null;
-          } else {
-            setCount(Math.floor(start));
-          }
-        }, 16);
-        observer.disconnect();
-        return () => {
+    let timer: ReturnType<typeof setInterval> | null = null;
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) return;
+      let start = 0;
+      const end = 3000;
+      const step = (end / 1800) * 16;
+      timer = setInterval(() => {
+        start += step;
+        if (start >= end) {
+          setCount(end);
           if (timer) clearInterval(timer);
-        };
-      }
+        } else {
+          setCount(Math.floor(start));
+        }
+      }, 16);
+      observer.disconnect();
     }, { threshold: 0.3 });
     if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (timer) clearInterval(timer);
+    };
   }, []);
 
   return (
