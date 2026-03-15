@@ -4,49 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import Button from '@/components/ui/Button';
 import { useLocale } from '@/hooks/useLocale';
 
-function HeroVideo() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const src = 'https://vz-977ab098-119.b-cdn.net/c5633fc5-d9d7-4c6e-b910-c24cda29cd39/playlist.m3u8';
-
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      // Safari soporta HLS nativo
-      video.src = src;
-    } else {
-      // Otros navegadores usan hls.js
-      import('hls.js').then(({ default: Hls }) => {
-        if (Hls.isSupported()) {
-          const hls = new Hls();
-          hls.loadSource(src);
-          hls.attachMedia(video);
-        }
-      });
-    }
-  }, []);
-
-  return (
-    <video
-      ref={videoRef}
-      autoPlay
-      muted
-      loop
-      playsInline
-      style={{
-        position: 'absolute',
-        inset: 0,
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-        zIndex: 0,
-        opacity: 0.55,
-      }}
-    />
-  );
-}
 
 function FloatingParticles() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
