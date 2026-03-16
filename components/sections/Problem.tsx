@@ -24,7 +24,7 @@ export default function Problem() {
             {t.problemQuotePart2}
           </p>
         </div>
-        <p style={{ color: '#999', fontSize: '0.95rem', lineHeight: 1.65, maxWidth: '600px' }}>Ninguna agencia te lo dice claro. Todas prometen "transformación digital" o "vídeo que convierte". Nosotros no. Te decimos exactamente qué haremos, por qué funciona, y qué esperar. Sin humo.</p>
+        <p style={{ color: '#999', fontSize: '0.95rem', lineHeight: 1.65, maxWidth: '600px' }}>{t.problemAgencyDisclaimer}</p>
       </div>
     </section>
   );

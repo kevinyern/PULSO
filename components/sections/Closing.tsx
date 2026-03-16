@@ -17,7 +17,7 @@ export default function Closing() {
           {t.closingSubcopy}
         </p>
         <p style={{ color: '#999', fontSize: '1rem', lineHeight: 1.65, marginBottom: '3.5rem', maxWidth: '500px', margin: '0 auto 3.5rem' }}>
-          Tu solicitud es revisada por nuestro equipo. Si hay encaje, te llamamos en 24–48h. Si no, te lo decimos directo.
+          {t.closingSubmissionDisclaimer}
         </p>
         <Button variant="primary" href="#application">
           {t.closingCTA}

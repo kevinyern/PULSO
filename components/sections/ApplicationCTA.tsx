@@ -94,7 +94,7 @@ export default function ApplicationCTA() {
     return (
       <section id="application" className="reveal" style={{ padding: 'clamp(4rem, 8vw, 6rem) clamp(1.25rem, 5vw, 2rem)', backgroundColor: '#000000', borderTop: '1px solid #222222', textAlign: 'center' }}>
         <div style={{ maxWidth: '640px', margin: '0 auto' }}>
-          <p style={eyebrow}>Aplicar</p>
+          <p style={eyebrow}>{t.applicationEyebrow}</p>
           <div style={{
             fontSize: '1.4rem',
             fontWeight: 600,
@@ -103,9 +103,9 @@ export default function ApplicationCTA() {
             marginTop: '2rem',
             marginBottom: '3rem',
           }}>
-            ✓ Hemos recibido tu solicitud.<br />
+            ✓ {t.formConfirmationSuccess}<br />
             <span style={{ fontSize: '1rem', fontWeight: 400, marginTop: '1rem', display: 'block' }}>
-              Te contactamos en 24-48h si vemos encaje.
+              {t.formConfirmationDelay}
             </span>
           </div>
           <button
@@ -123,7 +123,7 @@ export default function ApplicationCTA() {
               transition: 'all 0.2s ease',
             }}
           >
-            Volver
+            {t.formResetButton}
           </button>
         </div>
       </section>
@@ -134,7 +134,7 @@ export default function ApplicationCTA() {
     <section id="application" className="reveal" style={{ padding: 'clamp(4rem, 8vw, 6rem) clamp(1.25rem, 5vw, 2rem)', backgroundColor: '#000000', borderTop: '1px solid #222222' }}>
       <div style={{ maxWidth: '640px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <p style={eyebrow}>Aplicar</p>
+          <p style={eyebrow}>{t.applicationEyebrow}</p>
           <h2 style={h2}>{t.applicationCtaTitle}</h2>
           <p style={{ color: '#aaa', fontSize: '1rem', lineHeight: 1.7 }}>
             {t.applicationCtaCopy}
@@ -198,11 +198,11 @@ export default function ApplicationCTA() {
 
           {/* 3. Current problem / What they want to change (combined) */}
           <div style={fieldContainer}>
-            <label style={label} htmlFor="problem">Tu reto actual</label>
+            <label style={label} htmlFor="problem">{t.formCurrentChallenge}</label>
             <textarea
               id="problem"
               name="problem"
-              placeholder="¿Dónde necesitas escalar? Marca visual débil, conversión baja, no sabes cómo comunicar en vídeo..."
+              placeholder={t.formCurrentChallengePlaceholder}
               value={formData.problem}
               onChange={handleChange}
               required
@@ -249,11 +249,11 @@ export default function ApplicationCTA() {
                 }
               }}
             >
-              <option value="">Seleccionar...</option>
-              <option value="<10k">Menos de 10k€/mes</option>
-              <option value="10k-30k">10k–30k€/mes</option>
-              <option value="30k-100k">30k–100k€/mes</option>
-              <option value=">100k">Más de 100k€/mes</option>
+              <option value="">{t.formSelectPlaceholder}</option>
+              <option value={t.formRevenueOptions.option1}>{t.formRevenueOptions.option1}</option>
+              <option value={t.formRevenueOptions.option2}>{t.formRevenueOptions.option2}</option>
+              <option value={t.formRevenueOptions.option3}>{t.formRevenueOptions.option3}</option>
+              <option value={t.formRevenueOptions.option4}>{t.formRevenueOptions.option4}</option>
             </select>
           </div>
 
@@ -281,7 +281,7 @@ export default function ApplicationCTA() {
                 }
               }}
             >
-              <option value="">Seleccionar...</option>
+              <option value="">{t.formSelectPlaceholder}</option>
               <option value={t.formInvestmentOptions.option1}>{t.formInvestmentOptions.option1}</option>
               <option value={t.formInvestmentOptions.option2}>{t.formInvestmentOptions.option2}</option>
               <option value={t.formInvestmentOptions.option3}>{t.formInvestmentOptions.option3}</option>
@@ -306,7 +306,7 @@ export default function ApplicationCTA() {
         </form>
 
         <p style={{ color: '#888', fontSize: '0.85rem', marginTop: '2rem', lineHeight: 1.65, textAlign: 'center' }}>
-          Revisamos tu caso. Si vemos encaje, te invitamos a una llamada.<br />Si no, no te hacemos perder tiempo.
+          {t.formSubmissionDisclaimer}
         </p>
       </div>
     </section>

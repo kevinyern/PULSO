@@ -63,6 +63,30 @@ export type LocaleContent = {
   footerText: string;
   languageSelector: string;
 
+  // Additional UI texts
+  heroSecondaryHelper: string;
+  investmentEyebrow: string;
+  investmentSubtitle: string;
+  investmentIntro: string;
+  howWorksIntro: string;
+  whatIncludesIntro: string;
+  applicationEyebrow: string;
+  formSelectPlaceholder: string;
+  formCurrentChallenge: string;
+  formCurrentChallengePlaceholder: string;
+  formRevenueOptions: {
+    option1: string;
+    option2: string;
+    option3: string;
+    option4: string;
+  };
+  formResetButton: string;
+  formConfirmationSuccess: string;
+  formConfirmationDelay: string;
+  formSubmissionDisclaimer: string;
+  closingSubmissionDisclaimer: string;
+  problemAgencyDisclaimer: string;
+
   // Form
   formBrand: string;
   formBrandPlaceholder: string;
@@ -230,6 +254,30 @@ const es: LocaleContent = {
   headerCTA: "Aplicar",
   footerText: "© 2024 Pulso. Todos los derechos reservados.",
   languageSelector: "Idioma",
+
+  // Additional UI texts
+  heroSecondaryHelper: "O aprende qué hace diferente a Pulso",
+  investmentEyebrow: "Inversión",
+  investmentSubtitle: "Comprometidos. Sin distracciones.",
+  investmentIntro: "No trabajamos con 50 clientes a la vez. Seleccionamos 3–5 negocios por año. Inversión mínima que garantiza que tu proyecto es prioridad. Los resultados vienen de ahí.",
+  howWorksIntro: "Cada proyecto es único. Te lo hacemos simple: investigamos fondo, diseñamos estrategia audiovisual específica para ti, ejecutamos con rigor, medimos y ajustamos. Obsesionados con resultados, no con horas.",
+  whatIncludesIntro: "Cada proyecto es a medida. Estos son los pilares que nunca faltan en nuestro trabajo.",
+  applicationEyebrow: "Aplicar",
+  formSelectPlaceholder: "Seleccionar...",
+  formCurrentChallenge: "Tu reto actual",
+  formCurrentChallengePlaceholder: "¿Dónde necesitas escalar? Marca visual débil, conversión baja, no sabes cómo comunicar en vídeo...",
+  formRevenueOptions: {
+    option1: "Menos de 10k€/mes",
+    option2: "10k–30k€/mes",
+    option3: "30k–100k€/mes",
+    option4: "Más de 100k€/mes",
+  },
+  formResetButton: "Volver",
+  formConfirmationSuccess: "✓ Hemos recibido tu solicitud.",
+  formConfirmationDelay: "Te contactamos en 24-48h si vemos encaje.",
+  formSubmissionDisclaimer: "Revisamos tu caso. Si vemos encaje, te invitamos a una llamada. Si no, no te hacemos perder tiempo.",
+  closingSubmissionDisclaimer: "Tu solicitud es revisada por nuestro equipo. Si hay encaje, te llamamos en 24–48h. Si no, te lo decimos directo.",
+  problemAgencyDisclaimer: "Ninguna agencia te lo dice claro. Todas prometen \"transformación digital\" o \"vídeo que convierte\". Nosotros no. Te decimos exactamente qué haremos, por qué funciona, y qué esperar. Sin humo.",
 
   // Form
   formBrand: "¿Cuál es tu marca o negocio?",
@@ -399,6 +447,30 @@ const fr: LocaleContent = {
   footerText: "© 2024 Pulso. Tous droits réservés.",
   languageSelector: "Langue",
 
+  // Additional UI texts
+  heroSecondaryHelper: "Ou découvrez ce qui rend Pulso différent",
+  investmentEyebrow: "Investissement",
+  investmentSubtitle: "Engagés. Sans distractions.",
+  investmentIntro: "Nous ne travaillons pas avec 50 clients à la fois. Nous sélectionnons 3–5 projets par an. Investissement minimum qui garantit que ton projet est prioritaire. Les résultats en dépendent.",
+  howWorksIntro: "Chaque projet est unique. Nous te le rendons simple : nous investigons en profondeur, concevons une stratégie audiovisuelle spécifique pour toi, exécutons avec rigueur, mesurons et ajustons. Obsédés par les résultats, pas par les heures.",
+  whatIncludesIntro: "Chaque projet est sur mesure. Ce sont les piliers qui ne manquent jamais dans notre travail.",
+  applicationEyebrow: "Postuler",
+  formSelectPlaceholder: "Sélectionner...",
+  formCurrentChallenge: "Ton enjeu actuel",
+  formCurrentChallengePlaceholder: "Où dois-tu progresser ? Image faible, conversion basse, tu ne sais pas comment communiquer en vidéo...",
+  formRevenueOptions: {
+    option1: "Moins de 10k€/mois",
+    option2: "10k–30k€/mois",
+    option3: "30k–100k€/mois",
+    option4: "Plus de 100k€/mois",
+  },
+  formResetButton: "Retour",
+  formConfirmationSuccess: "✓ Nous avons reçu ta candidature.",
+  formConfirmationDelay: "Nous te recontacterons en 24-48h si nous voyons un fit.",
+  formSubmissionDisclaimer: "Nous examinons ton cas. Si nous voyons un fit, nous t\'invitons à un appel. Sinon, nous ne te faisons pas perdre de temps.",
+  closingSubmissionDisclaimer: "Ta candidature est examinée par notre équipe. S\'il y a un fit, nous t\'appelons en 24–48h. Sinon, nous te le disons directement.",
+  problemAgencyDisclaimer: "Aucune agence ne te le dit clairement. Toutes promettent \"transformation numérique\" ou \"vidéo qui convertit\". Pas nous. Nous te disons exactement ce que nous ferons, pourquoi ça marche, et à quoi t\'attendre. Sans poudre aux yeux.",
+
   // Form
   formBrand: "Quelle est ta marque ou ton business?",
   formBrandPlaceholder: "Ta marque ou business",
@@ -566,6 +638,30 @@ const ca: LocaleContent = {
   headerCTA: "Optar",
   footerText: "© 2024 Pulso. Tots els drets reservats.",
   languageSelector: "Idioma",
+
+  // Additional UI texts
+  heroSecondaryHelper: "O descobreix què fa diferent a Pulso",
+  investmentEyebrow: "Inversió",
+  investmentSubtitle: "Comprometits. Sense distraccions.",
+  investmentIntro: "No treballem amb 50 clients alhora. Seleccionem 3–5 projectes per any. Inversió mínima que garanteix que el teu projecte és prioritari. Els resultats en depenen.",
+  howWorksIntro: "Cada projecte és únic. Te'l fem simple: investiguem a fons, dissenyem estratègia audiovisual específica per a tu, executem amb rigor, mesurem i ajustem. Obsessionats pels resultats, no per les hores.",
+  whatIncludesIntro: "Cada projecte és a mida. Aquests són els pilars que mai falten en el nostre treball.",
+  applicationEyebrow: "Optar",
+  formSelectPlaceholder: "Seleccionar...",
+  formCurrentChallenge: "El teu repte actual",
+  formCurrentChallengePlaceholder: "On necessites escalar? Imatge feble, conversió baixa, no saps com comunicar en vídeo...",
+  formRevenueOptions: {
+    option1: "Menys de 10k€/mes",
+    option2: "10k–30k€/mes",
+    option3: "30k–100k€/mes",
+    option4: "Més de 100k€/mes",
+  },
+  formResetButton: "Enrere",
+  formConfirmationSuccess: "✓ Hem rebut la teva candidatura.",
+  formConfirmationDelay: "Et recontactarem en 24-48h si veiem encaixa.",
+  formSubmissionDisclaimer: "Examinem el teu cas. Si veiem encaixa, t'invitem a una trucada. Sinó, no et fem perdre temps.",
+  closingSubmissionDisclaimer: "La teva candidatura és examinada pel nostre equip. Si hi ha encaixa, et cridem en 24–48h. Sinó, te'l diem directament.",
+  problemAgencyDisclaimer: "Cap agència te'l diu clar. Totes prometen \"transformació digital\" o \"vídeo que converteix\". Nosaltres no. Et diem exactament què farem, per què funciona, i què esperar. Sense fum.",
 
   // Form
   formBrand: "Quina és la teva marca o negoci?",

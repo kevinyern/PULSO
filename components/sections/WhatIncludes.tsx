@@ -10,7 +10,7 @@ export default function WhatIncludes() {
       <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <p style={{ fontSize: '0.85rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '1.5rem' }}>Qué incluye</p>
         <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '2rem' }}>{t.whatIncludesTitle}</h2>
-        <p style={{ color: '#999', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '4rem', maxWidth: '620px' }}>Cada proyecto es a medida. Estos son los pilares que nunca faltan en nuestro trabajo.</p>
+        <p style={{ color: '#999', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '4rem', maxWidth: '620px' }}>{t.whatIncludesIntro}</p>
         <div className="grid-4col" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '0', border: '1px solid #2a2a2a' }}>
           {t.whatIncludesItems.map((block, i) => (
             <div key={block.title} style={{

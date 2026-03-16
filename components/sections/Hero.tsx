@@ -81,7 +81,7 @@ export default function Hero({ onSecondaryClick }: HeroProps) {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const heroPadding = isMobile ? '5rem 1.25rem' : '6rem 2rem';
+  const heroPadding = isMobile ? '3rem 1.25rem' : '6rem 2rem';
 
   return (
     <section className="reveal visible" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: heroPadding, position: 'relative', overflow: 'hidden' }}>
@@ -96,19 +96,19 @@ export default function Hero({ onSecondaryClick }: HeroProps) {
       <FloatingParticles />
 
       <div style={{ maxWidth: '860px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 3 }}>
-        <p style={{ fontSize: '0.85rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '2.5rem', fontWeight: 500 }}>
+        <p style={{ fontSize: '0.75rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: isMobile ? '1.5rem' : '2.5rem', fontWeight: 500 }}>
           {t.heroMicrocopy}
         </p>
-        <h1 style={{ fontSize: isMobile ? 'clamp(2.2rem, 9vw, 5.5rem)' : 'clamp(3rem, 8vw, 5.5rem)', fontWeight: 800, lineHeight: 1.05, letterSpacing: '-0.03em', color: '#fff', marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: isMobile ? 'clamp(1.8rem, 8vw, 4.5rem)' : 'clamp(3rem, 8vw, 5.5rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', marginBottom: isMobile ? '1.25rem' : '2rem' }}>
           Si tu marca factura premium pero se ve como una más,{' '}
           <span className="shimmer-gold" style={{ display: 'inline' }}>estás perdiendo autoridad antes de vender.</span>
         </h1>
-        <p style={{ fontSize: '1.15rem', color: '#ddd', lineHeight: 1.7, marginBottom: '3.5rem', maxWidth: '680px', margin: '0 auto 3.5rem' }}>
+        <p style={{ fontSize: isMobile ? '0.95rem' : '1.15rem', color: '#ddd', lineHeight: 1.6, marginBottom: isMobile ? '2rem' : '3.5rem', maxWidth: '680px', margin: '0 auto ' + (isMobile ? '2rem' : '3.5rem') }}>
           {t.heroSubheadline}
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center', justifyContent: 'center', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: isMobile ? '0.75rem' : '1rem', alignItems: 'center', justifyContent: 'center', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
           <Button variant="primary" href="#application">{t.heroCTAPrimary}</Button>
-          <p style={{ fontSize: '0.8rem', color: '#999', marginTop: '1rem', letterSpacing: '0.15em' }}>O aprende qué hace diferente a Pulso</p>
+          <p style={{ fontSize: '0.7rem', color: '#999', marginTop: isMobile ? '0.5rem' : '1rem', letterSpacing: '0.15em' }}>{t.heroSecondaryHelper}</p>
           <Button variant="secondary" onClick={onSecondaryClick}>{t.heroCTASecondary}</Button>
         </div>
       </div>
