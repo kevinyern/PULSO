@@ -81,10 +81,10 @@ export default function Hero({ onSecondaryClick }: HeroProps) {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const heroPadding = isMobile ? '2rem 1.25rem' : '6rem 2rem';
+  const heroPadding = isMobile ? '2rem 1.25rem' : '4rem 2rem';
 
   return (
-    <section className="reveal visible" style={{ minHeight: isMobile ? 'auto' : '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: heroPadding, position: 'relative', overflow: 'hidden' }}>
+    <section className="reveal visible" style={{ minHeight: isMobile ? 'auto' : 'min(100vh, 100dvh)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: heroPadding, position: 'relative', overflow: 'hidden' }}>
 
       {/* Imagen de fondo */}
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/pulso-arri.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.38, zIndex: 0 }} />
@@ -99,11 +99,11 @@ export default function Hero({ onSecondaryClick }: HeroProps) {
         <p style={{ fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: isMobile ? '1rem' : '2.5rem', fontWeight: 500 }}>
           {t.heroMicrocopy}
         </p>
-        <h1 style={{ fontSize: isMobile ? 'clamp(1.4rem, 6vw, 2.5rem)' : 'clamp(3rem, 8vw, 5.5rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', marginBottom: isMobile ? '0.75rem' : '2rem' }}>
+        <h1 style={{ fontSize: isMobile ? 'clamp(1.4rem, 6vw, 2.5rem)' : 'clamp(1.8rem, 4vw, 4.5rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', marginBottom: isMobile ? '0.75rem' : '1.5rem' }}>
           Si tu marca factura premium pero se ve como una más,{' '}
           <span className="shimmer-gold" style={{ display: 'inline' }}>estás perdiendo autoridad antes de vender.</span>
         </h1>
-        <p style={{ fontSize: isMobile ? '0.85rem' : '1.15rem', color: '#ddd', lineHeight: 1.5, marginBottom: isMobile ? '1.25rem' : '3.5rem', maxWidth: '680px', margin: '0 auto ' + (isMobile ? '1.25rem' : '3.5rem') }}>
+        <p style={{ fontSize: isMobile ? '0.85rem' : '1rem', color: '#ddd', lineHeight: 1.5, marginBottom: isMobile ? '1.25rem' : '2rem', maxWidth: '680px', margin: '0 auto ' + (isMobile ? '1.25rem' : '2rem') }}>
           {t.heroSubheadline}
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: isMobile ? '0.5rem' : '1rem', alignItems: 'center', justifyContent: 'center', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
