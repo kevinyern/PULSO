@@ -13,17 +13,17 @@ export default function Solution() {
         <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '2rem' }}>
           {t.solutionTitle}
         </h2>
-        <p style={{ color: '#ccc', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '4rem', maxWidth: '620px' }}>
+        <p style={{ color: '#ccc', fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '4rem', maxWidth: '620px' }}>
           {t.solutionCopy}
         </p>
         <p style={{ color: '#999', fontSize: '0.85rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '2rem' }}>Pilares del trabajo</p>
         {t.solutionObjectiveItems.map((item, idx) => (
-          <div key={idx} style={{ display: 'flex', gap: '2rem', padding: '2rem 0', borderBottom: '1px solid #2a2a2a', alignItems: 'flex-start' }}>
-            <span className="num-pulse" style={{ color: '#D4AF37', fontSize: '3rem', fontWeight: 700, minWidth: '4.5rem', lineHeight: 1 }}>
+          <div key={idx} style={{ display: 'flex', gap: 'clamp(1rem, 3vw, 2rem)', padding: 'clamp(1.5rem, 3vw, 2rem) 0', borderBottom: '1px solid #2a2a2a', alignItems: 'flex-start' }}>
+            <span className="num-pulse" style={{ color: '#D4AF37', fontSize: 'clamp(2rem, 8vw, 3rem)', fontWeight: 700, minWidth: 'clamp(3rem, 15vw, 4.5rem)', lineHeight: 1 }}>
               {String(idx + 1).padStart(2, '0')}
             </span>
             <div>
-              <p style={{ color: '#fff', fontWeight: 600, fontSize: '1.15rem', marginBottom: '0.4rem' }}>{item}</p>
+              <p style={{ color: '#fff', fontWeight: 600, fontSize: 'clamp(1rem, 2.5vw, 1.15rem)', marginBottom: '0.4rem' }}>{item}</p>
             </div>
           </div>
         ))}

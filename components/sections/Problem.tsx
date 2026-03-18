@@ -13,18 +13,18 @@ export default function Problem() {
         <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: '2rem' }}>
           {t.problemTitle}
         </h2>
-        <p style={{ color: '#ccc', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '3rem', maxWidth: '620px', margin: '0 0 3rem 0', whiteSpace: 'pre-wrap' }}>
+        <p style={{ color: '#ccc', fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '3rem', maxWidth: '620px', whiteSpace: 'pre-wrap' }}>
           {t.problemCopy}
         </p>
         <div style={{ borderLeft: '2px solid #D4AF37', paddingLeft: '1.5rem', marginBottom: '2rem' }}>
-          <p style={{ color: '#fff', fontSize: '1.15rem', fontWeight: 600, lineHeight: 1.7, marginBottom: '0.5rem' }}>
+          <p style={{ color: '#fff', fontSize: 'clamp(1rem, 2.5vw, 1.15rem)', fontWeight: 600, lineHeight: 1.7, marginBottom: '0.5rem' }}>
             {t.problemQuotePart1}
           </p>
-          <p style={{ color: '#bbb', fontSize: '1.05rem', lineHeight: 1.7 }}>
+          <p style={{ color: '#bbb', fontSize: 'clamp(0.95rem, 2vw, 1.05rem)', lineHeight: 1.7 }}>
             {t.problemQuotePart2}
           </p>
         </div>
-        <p style={{ color: '#999', fontSize: '0.95rem', lineHeight: 1.65, maxWidth: '600px' }}>{t.problemAgencyDisclaimer}</p>
+        <p style={{ color: '#999', fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', lineHeight: 1.65, maxWidth: '600px' }}>{t.problemAgencyDisclaimer}</p>
       </div>
     </section>
   );

@@ -43,6 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: meta.description,
     keywords: meta.keywords,
     authors: [{ name: "Pulso" }],
+    creator: "Pulso",
+    publisher: "Pulso",
     openGraph: {
       title: meta.ogTitle,
       description: meta.ogDesc,
@@ -50,6 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "Pulso",
       locale: meta.ogLocale,
       type: "website",
+      images: [
+        {
+          url: "https://pulso.ad/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Pulso - Agencia Audiovisual Premium",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
@@ -61,6 +71,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: "https://pulso.ad",
       languages: { es: "https://pulso.ad/es", fr: "https://pulso.ad/fr", ca: "https://pulso.ad/ca" },
     },
+    viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0",
   };
 }
 

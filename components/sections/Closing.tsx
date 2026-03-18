@@ -13,10 +13,10 @@ export default function Closing() {
         <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', color: '#fff', marginBottom: '2rem' }}>
           {t.closingHeadline}
         </h2>
-        <p style={{ color: '#bbb', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '1.5rem', maxWidth: '500px', margin: '0 auto 1.5rem' }}>
+        <p style={{ color: '#bbb', fontSize: 'clamp(1rem, 2vw, 1.15rem)', lineHeight: 1.7, marginBottom: '1.5rem', maxWidth: '500px', margin: '0 auto 1.5rem' }}>
           {t.closingSubcopy}
         </p>
-        <p style={{ color: '#999', fontSize: '1rem', lineHeight: 1.65, marginBottom: '3.5rem', maxWidth: '500px', margin: '0 auto 3.5rem' }}>
+        <p style={{ color: '#999', fontSize: 'clamp(0.95rem, 2vw, 1rem)', lineHeight: 1.65, marginBottom: '3.5rem', maxWidth: '500px', margin: '0 auto 3.5rem' }}>
           {t.closingSubmissionDisclaimer}
         </p>
         <Button variant="primary" href="#application">

@@ -646,7 +646,7 @@ const ca: LocaleContent = {
   investmentIntro: "No treballem amb 50 clients alhora. Seleccionem 3–5 projectes per any. Inversió mínima que garanteix que el teu projecte és prioritari. Els resultats en depenen.",
   howWorksIntro: "Cada projecte és únic. Te'l fem simple: investiguem a fons, dissenyem estratègia audiovisual específica per a tu, executem amb rigor, mesurem i ajustem. Obsessionats pels resultats, no per les hores.",
   whatIncludesIntro: "Cada projecte és a mida. Aquests són els pilars que mai falten en el nostre treball.",
-  applicationEyebrow: "Optar",
+  applicationEyebrow: "Candidatura",
   formSelectPlaceholder: "Seleccionar...",
   formCurrentChallenge: "El teu repte actual",
   formCurrentChallengePlaceholder: "On necessites escalar? Imatge feble, conversió baixa, no saps com comunicar en vídeo...",
@@ -671,7 +671,7 @@ const ca: LocaleContent = {
   formWantChange: "Què vols que canviï en la teva presència o contingut en els propers 90 dies?",
   formWantChangePlaceholder: "Descriu els canvis que esperes",
   formProblem: "Quin problema sents avui amb la teva imatge, contingut o posicionament?",
-  formProblemPlaceholder: "Cuéntanos el problema que veus",
+  formProblemPlaceholder: "Descriu el problema que veus",
   formRevenue: "Quina facturació mensual té actualment el negoci?",
   formInvestment: "Quina inversió estàs disposat a assumir?",
   formInvestmentOptions: {
@@ -682,7 +682,7 @@ const ca: LocaleContent = {
   },
   formWhenStart: "Quan vols començar?",
   formWhyPulso: "Per què creus que Pulso pot ser el partner adequat?",
-  formWhyPulsoPaceholder: "Cuéntanos per què creus que encaixem",
+  formWhyPulsoPaceholder: "Descriu per què creus que encaixem",
   formSubmit: "Enviar candidatura",
 };
 
@@ -701,4 +701,5 @@ export function getLocale(locale?: string): Locale {
 
 export function getMessage(locale: Locale): LocaleContent {
   return messages[locale];
+}
 }
