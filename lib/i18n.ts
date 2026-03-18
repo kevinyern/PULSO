@@ -702,4 +702,3 @@ export function getLocale(locale?: string): Locale {
 export function getMessage(locale: Locale): LocaleContent {
   return messages[locale];
 }
-}

@@ -8,7 +8,7 @@ export default function HeroVideo() {
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video) return;
+    if (!video) return undefined;
 
     const src = 'https://vz-977ab098-119.b-cdn.net/c5633fc5-d9d7-4c6e-b910-c24cda29cd39/playlist.m3u8';
 
@@ -26,7 +26,7 @@ export default function HeroVideo() {
           const hls = new Hls();
           hls.loadSource(src);
           hls.attachMedia(video);
-          hls.on('hlsError', handleError);
+          hls.on(Hls.Events.ERROR, handleError);
         } else {
           setVideoLoadError(true);
         }
