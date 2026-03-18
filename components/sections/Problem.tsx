@@ -6,7 +6,7 @@ export default function Problem() {
   const { t } = useLocale();
   return (
     <section className="reveal" style={{ padding: 'clamp(4rem, 8vw, 7rem) clamp(1.25rem, 5vw, 2rem)', borderTop: '1px solid #2a2a2a', position: 'relative', overflow: 'hidden' }}>
-      <div className="parallax-bg" style={{ position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-problema.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, zIndex: 0 }} />
+      <div className="parallax-bg" style={{ position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-problema.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.35, zIndex: 0 }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.45) 100%)', zIndex: 1 }} />
       <div style={{ maxWidth: '860px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
         <p style={{ fontSize: '0.85rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '1.5rem' }}>El problema</p>

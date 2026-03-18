@@ -20,7 +20,7 @@ export default function Investment() {
     <section className="reveal" style={{ padding: 'clamp(4rem, 8vw, 7rem) clamp(1.25rem, 5vw, 2rem)', borderTop: '1px solid #2a2a2a', position: 'relative', overflow: 'hidden' }}>
       {/* Imagen de fondo sutil */}
       <div className="parallax-bg" style={{
-        position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-hero.png)',
+        position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-hero.jpg)',
         backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.22,
       }} />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(8,8,8,0.65)', zIndex: 1 }} />

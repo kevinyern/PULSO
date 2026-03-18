@@ -100,8 +100,8 @@ export default function Hero({ onSecondaryClick }: HeroProps) {
           {t.heroMicrocopy}
         </p>
         <h1 style={{ fontSize: isMobile ? 'clamp(1.4rem, 6vw, 2.5rem)' : 'clamp(1.8rem, 4vw, 4.5rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', color: '#fff', marginBottom: isMobile ? '0.75rem' : '1.5rem' }}>
-          Si tu marca factura premium pero se ve como una más,{' '}
-          <span className="shimmer-gold" style={{ display: 'inline' }}>estás perdiendo autoridad antes de vender.</span>
+          {t.heroHeadline.split(/,\s*(?=[^,]*$)/)[0]},{' '}
+          <span className="shimmer-gold" style={{ display: 'inline' }}>{t.heroHeadline.split(/,\s*(?=[^,]*$)/)[1]}</span>
         </h1>
         <p style={{ fontSize: isMobile ? '0.85rem' : '1rem', color: '#ddd', lineHeight: 1.5, marginBottom: isMobile ? '1.25rem' : '2rem', maxWidth: '680px', margin: '0 auto ' + (isMobile ? '1.25rem' : '2rem') }}>
           {t.heroSubheadline}

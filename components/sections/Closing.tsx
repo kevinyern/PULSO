@@ -7,7 +7,7 @@ export default function Closing() {
   const { t } = useLocale();
   return (
     <section className="reveal" style={{ padding: 'clamp(4rem, 8vw, 9rem) clamp(1.25rem, 5vw, 2rem)', borderTop: '1px solid #2a2a2a', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-      <div className="parallax-bg" style={{ position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-solucion.png)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3 }} />
+      <div className="parallax-bg" style={{ position: 'absolute', inset: '-20%', backgroundImage: 'url(/2026-03-15-pulso-solucion.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3 }} />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(8,8,8,0.62)', zIndex: 1 }} />
       <div style={{ maxWidth: '700px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
         <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', color: '#fff', marginBottom: '2rem' }}>
