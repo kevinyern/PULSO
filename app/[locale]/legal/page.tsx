@@ -11,7 +11,7 @@ export default function LegalPage() {
       sections: [
         {
           heading: '1. Denominación y Datos de la Empresa',
-          content: 'Denominación social: Pulso - Agencia Audiovisual\nTerritorio de operación: Principat d\'Andorra\nContacto: hola@pulso.ad'
+          content: 'Denominación social: Pulso - Agencia Audiovisual\nTerritorio de operación: Principat d\'Andorra\nContacto: info@pulso.ad'
         },
         {
           heading: '2. Objeto Social',
@@ -44,7 +44,7 @@ export default function LegalPage() {
       sections: [
         {
           heading: '1. Dénomination et Données de l\'Entreprise',
-          content: 'Dénomination sociale : Pulso - Agence Audiovisuelle\nTerritoire d\'opération : Principat d\'Andorre\nContact : hola@pulso.ad'
+          content: 'Dénomination sociale : Pulso - Agence Audiovisuelle\nTerritoire d\'opération : Principat d\'Andorre\nContact : info@pulso.ad'
         },
         {
           heading: '2. Objet Social',
@@ -77,7 +77,7 @@ export default function LegalPage() {
       sections: [
         {
           heading: '1. Denominació i Dades de l\'Empresa',
-          content: 'Denominació social: Pulso - Agència Audiovisual\nTerritorio d\'operació: Principat d\'Andorra\nContacte: hola@pulso.ad'
+          content: 'Denominació social: Pulso - Agència Audiovisual\nTerritorio d\'operació: Principat d\'Andorra\nContacte: info@pulso.ad'
         },
         {
           heading: '2. Objecte Social',

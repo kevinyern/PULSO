@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       sections: [
         {
           heading: '1. Responsable del Tratamiento',
-          content: 'Pulso - Agencia Audiovisual\nContacto: hola@pulso.ad\nUbicación: Principat d\'Andorra'
+          content: 'Pulso - Agencia Audiovisual\nContacto: info@pulso.ad\nUbicación: Principat d\'Andorra'
         },
         {
           heading: '2. Datos Personales Recogidos',
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
         },
         {
           heading: '6. Derechos del Usuario',
-          content: 'Tienes los siguientes derechos sobre tus datos personales:\n• Derecho de acceso: solicitar qué datos tenemos sobre ti\n• Derecho de rectificación: corregir datos incorrectos\n• Derecho de supresión: pedir la eliminación de tus datos\n• Derecho de portabilidad: obtener una copia de tus datos en formato estructurado\n• Derecho de oposición: oponerte al tratamiento de tus datos\n\nPara ejercer estos derechos, contacta con hola@pulso.ad'
+          content: 'Tienes los siguientes derechos sobre tus datos personales:\n• Derecho de acceso: solicitar qué datos tenemos sobre ti\n• Derecho de rectificación: corregir datos incorrectos\n• Derecho de supresión: pedir la eliminación de tus datos\n• Derecho de portabilidad: obtener una copia de tus datos en formato estructurado\n• Derecho de oposición: oponerte al tratamiento de tus datos\n\nPara ejercer estos derechos, contacta con info@pulso.ad'
         },
         {
           heading: '7. Cookies',
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
       sections: [
         {
           heading: '1. Responsable du Traitement',
-          content: 'Pulso - Agence Audiovisuelle\nContact : hola@pulso.ad\nLocalisation : Principat d\'Andorre'
+          content: 'Pulso - Agence Audiovisuelle\nContact : info@pulso.ad\nLocalisation : Principat d\'Andorre'
         },
         {
           heading: '2. Données Personnelles Collectées',
@@ -72,7 +72,7 @@ export default function PrivacyPage() {
         },
         {
           heading: '6. Droits de l\'Utilisateur',
-          content: 'Vous avez les droits suivants concernant vos données personnelles :\n• Droit d\'accès : demander quelles données nous avons sur vous\n• Droit de rectification : corriger les données incorrectes\n• Droit à l\'oubli : demander la suppression de vos données\n• Droit à la portabilité : obtenir une copie de vos données\n• Droit d\'opposition : vous opposer au traitement de vos données\n\nPour exercer ces droits, contactez hola@pulso.ad'
+          content: 'Vous avez les droits suivants concernant vos données personnelles :\n• Droit d\'accès : demander quelles données nous avons sur vous\n• Droit de rectification : corriger les données incorrectes\n• Droit à l\'oubli : demander la suppression de vos données\n• Droit à la portabilité : obtenir une copie de vos données\n• Droit d\'opposition : vous opposer au traitement de vos données\n\nPour exercer ces droits, contactez info@pulso.ad'
         },
         {
           heading: '7. Cookies',
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
       sections: [
         {
           heading: '1. Responsable del Tractament',
-          content: 'Pulso - Agència Audiovisual\nContacte: hola@pulso.ad\nUbicació: Principat d\'Andorra'
+          content: 'Pulso - Agència Audiovisual\nContacte: info@pulso.ad\nUbicació: Principat d\'Andorra'
         },
         {
           heading: '2. Dades Personals Recollides',
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
         },
         {
           heading: '6. Drets de l\'Usuari',
-          content: 'Tens els següents drets sobre les teves dades personals:\n• Dret d\'accés: sol·licitar quines dades tenim sobre tu\n• Dret de rectificació: corregir dades incorrectes\n• Dret a l\'oblit: demanar l\'eliminació de les teves dades\n• Dret a la portabilitat: obtenir una còpia de les teves dades\n• Dret d\'oposició: oposar-te al tractament de les teves dades\n\nPer exercir aquests drets, contacta amb hola@pulso.ad'
+          content: 'Tens els següents drets sobre les teves dades personals:\n• Dret d\'accés: sol·licitar quines dades tenim sobre tu\n• Dret de rectificació: corregir dades incorrectes\n• Dret a l\'oblit: demanar l\'eliminació de les teves dades\n• Dret a la portabilitat: obtenir una còpia de les teves dades\n• Dret d\'oposició: oposar-te al tractament de les teves dades\n\nPer exercir aquests drets, contacta amb info@pulso.ad'
         },
         {
           heading: '7. Cookies',
